@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvl1text0">C++</string>
+    <string name="lvl1text1">Delphi</string>
+    <string name="lvl1text2">Python</string>
+    <string name="lvl1text3">Java</string>
+    <string name="lvl1text4">PHP</string>
+    <string name="lvl1text5">Ruby</string>
+    <string name="lvl1text6">JavaScript</string>
+    <string name="lvl1text7">C#</string>
+    <string name="lvl1text8">Swift</string>
+    <string name="lvl1text9">Kotlin</string>
+</resources>
