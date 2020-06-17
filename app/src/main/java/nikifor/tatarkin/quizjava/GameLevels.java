@@ -14,6 +14,11 @@ public class GameLevels extends AppCompatActivity {
 
     private Button buttonBack;
     private TextView buttonLevel1;
+    private TextView buttonLevel2;
+    private TextView buttonLevel3;
+    private TextView buttonLevel4;
+    private TextView buttonLevel5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +32,8 @@ public class GameLevels extends AppCompatActivity {
         back();
 
         startLevel1();
+        startLevel2();
+        startLevel3();
 
         //Убераем строку состояния (во весь экран)
         Window window = getWindow();
@@ -49,6 +56,9 @@ public class GameLevels extends AppCompatActivity {
     private void initViews() {
         buttonBack = findViewById(R.id.button_back);
         buttonLevel1 = findViewById(R.id.textView1);
+        buttonLevel2 = findViewById(R.id.textView2);
+        buttonLevel3 = findViewById(R.id.textView3);
+
     }
 
     private void startLevel1(){
@@ -57,6 +67,32 @@ public class GameLevels extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     Intent intent = new Intent(GameLevels.this, Level1.class);
+                    startActivity(intent);finish();
+                }catch (Exception e){
+
+                }
+            }
+        });
+    }
+    private void startLevel2(){
+        buttonLevel2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level2.class);
+                    startActivity(intent);finish();
+                }catch (Exception e){
+
+                }
+            }
+        });
+    }
+    private void startLevel3(){
+        buttonLevel3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GameLevels.this, Level3.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
